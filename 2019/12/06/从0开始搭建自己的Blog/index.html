@@ -1,89 +1,312 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+
+
 
   
-  <title>从0开始搭建自己的Blog | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1. 介绍 2. 购买云服务 2.1. 服务器 2.2. 域名 2.3. 对象储存服务   3. 配置云服务 4. 配置开发环境 5. 搭建Hexo框架 6. 配置Blog 6.1. 配置到GitHub Page 6.2. 添加评论系统 6.3. 配合对象存储服务 6.4. 日常使用      1. 介绍 写在最前  想到哪做到哪写到哪，本文内容比较随性，部分步骤不一定需要，自行斟酌，如有任">
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="经验," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="1. 介绍 2. 购买云服务 2.1. 服务器 2.2. 域名 2.3. 对象储存服务   3. 配置云服务 配置服务器   4. 配置开发环境 5. 搭建Hexo框架 6. 配置Blog 6.1. 配置到GitHub Page 换主题 6.2. 添加评论系统 6.3. 配合对象存储服务 6.4. 日常使用      1. 介绍 写在最前  想到哪做到哪写到哪，本文内容比较随性，部分步骤不一">
 <meta name="keywords" content="经验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="从0开始搭建自己的Blog">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;06&#x2F;%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1. 介绍 2. 购买云服务 2.1. 服务器 2.2. 域名 2.3. 对象储存服务   3. 配置云服务 4. 配置开发环境 5. 搭建Hexo框架 6. 配置Blog 6.1. 配置到GitHub Page 6.2. 添加评论系统 6.3. 配合对象存储服务 6.4. 日常使用      1. 介绍 写在最前  想到哪做到哪写到哪，本文内容比较随性，部分步骤不一定需要，自行斟酌，如有任">
+<meta property="og:description" content="1. 介绍 2. 购买云服务 2.1. 服务器 2.2. 域名 2.3. 对象储存服务   3. 配置云服务 配置服务器   4. 配置开发环境 5. 搭建Hexo框架 6. 配置Blog 6.1. 配置到GitHub Page 换主题 6.2. 添加评论系统 6.3. 配合对象存储服务 6.4. 日常使用      1. 介绍 写在最前  想到哪做到哪写到哪，本文内容比较随性，部分步骤不一">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-06T08:47:59.029Z">
+<meta property="og:updated_time" content="2019-12-06T08:56:37.638Z">
 <meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/12/06/从0开始搭建自己的Blog/"/>
+
+
+
+
+
+  <title>从0开始搭建自己的Blog | Hexo</title>
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+
+
+
+
+
+
+
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-从0开始搭建自己的Blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/12/06/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog/" class="article-date">
-  <time datetime="2019-12-05T18:58:47.000Z" itemprop="datePublished">2019-12-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
   
-    <h1 class="article-title" itemprop="name">
-      从0开始搭建自己的Blog
-    </h1>
+  
+    
   
 
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/06/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">从0开始搭建自己的Blog</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-06T02:58:47+08:00">
+                2019-12-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/12/06/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/12/06/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
       </header>
     
-    <div class="article-entry" itemprop="articleBody">
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
       
         <!-- TOC -->
 
@@ -95,11 +318,15 @@
 <li><a href="#23-对象储存服务">2.3. 对象储存服务</a></li>
 </ul>
 </li>
-<li><a href="#3-配置云服务">3. 配置云服务</a></li>
+<li><a href="#3-配置云服务">3. 配置云服务</a><ul>
+<li><a href="#配置服务器">配置服务器</a></li>
+</ul>
+</li>
 <li><a href="#4-配置开发环境">4. 配置开发环境</a></li>
 <li><a href="#5-搭建hexo框架">5. 搭建Hexo框架</a></li>
 <li><a href="#6-配置blog">6. 配置Blog</a><ul>
 <li><a href="#61-配置到github-page">6.1. 配置到GitHub Page</a></li>
+<li><a href="#换主题">换主题</a></li>
 <li><a href="#62-添加评论系统">6.2. 添加评论系统</a></li>
 <li><a href="#63-配合对象存储服务">6.3. 配合对象存储服务</a></li>
 <li><a href="#64-日常使用">6.4. 日常使用</a></li>
@@ -118,12 +345,19 @@
 <ol>
 <li>我随便选了<a href="https://www.aliyun.com/product/ecs?spm=5176.12825654.eofdhaal5.2.6f6e2c4aY2spOX&aly_as=zBRFYGGw" target="_blank" rel="noopener">阿里云的ECS</a>。</li>
 </ol>
-<h2 id="2-2-域名"><a href="#2-2-域名" class="headerlink" title="2.2. 域名"></a>2.2. 域名</h2><h2 id="2-3-对象储存服务"><a href="#2-3-对象储存服务" class="headerlink" title="2.3. 对象储存服务"></a>2.3. 对象储存服务</h2><h1 id="3-配置云服务"><a href="#3-配置云服务" class="headerlink" title="3. 配置云服务"></a>3. 配置云服务</h1><h1 id="4-配置开发环境"><a href="#4-配置开发环境" class="headerlink" title="4. 配置开发环境"></a>4. 配置开发环境</h1><ol>
+<h2 id="2-2-域名"><a href="#2-2-域名" class="headerlink" title="2.2. 域名"></a>2.2. 域名</h2><h2 id="2-3-对象储存服务"><a href="#2-3-对象储存服务" class="headerlink" title="2.3. 对象储存服务"></a>2.3. 对象储存服务</h2><h1 id="3-配置云服务"><a href="#3-配置云服务" class="headerlink" title="3. 配置云服务"></a>3. 配置云服务</h1><h2 id="配置服务器"><a href="#配置服务器" class="headerlink" title="配置服务器"></a>配置服务器</h2><ol>
+<li>安装Git</li>
+<li>安装Nodejs</li>
+<li><h1 id="4-配置开发环境"><a href="#4-配置开发环境" class="headerlink" title="4. 配置开发环境"></a>4. 配置开发环境</h1></li>
 <li>下载安装<a href="http://www.hostbuf.com/t/988.html" target="_blank" rel="noopener">FinalShell</a></li>
 <li>本地安装vscode-insiders</li>
 <li>安装Remote Development扩展</li>
 <li>cmd+P输入remote, 使用Remote-ssh: connect to host选项</li>
-<li>按提示输入host地址，登录名，密码<h1 id="5-搭建Hexo框架"><a href="#5-搭建Hexo框架" class="headerlink" title="5. 搭建Hexo框架"></a>5. 搭建Hexo框架</h1><h1 id="6-配置Blog"><a href="#6-配置Blog" class="headerlink" title="6. 配置Blog"></a>6. 配置Blog</h1><h2 id="6-1-配置到GitHub-Page"><a href="#6-1-配置到GitHub-Page" class="headerlink" title="6.1. 配置到GitHub Page"></a>6.1. 配置到GitHub Page</h2><h2 id="6-2-添加评论系统"><a href="#6-2-添加评论系统" class="headerlink" title="6.2. 添加评论系统"></a>6.2. 添加评论系统</h2></li>
+<li>按提示输入host地址，登录名，密码<h1 id="5-搭建Hexo框架"><a href="#5-搭建Hexo框架" class="headerlink" title="5. 搭建Hexo框架"></a>5. 搭建Hexo框架</h1><h1 id="6-配置Blog"><a href="#6-配置Blog" class="headerlink" title="6. 配置Blog"></a>6. 配置Blog</h1><h2 id="6-1-配置到GitHub-Page"><a href="#6-1-配置到GitHub-Page" class="headerlink" title="6.1. 配置到GitHub Page"></a>6.1. 配置到GitHub Page</h2><h2 id="换主题"><a href="#换主题" class="headerlink" title="换主题"></a>换主题</h2></li>
+<li>选择一个支持评论系统的主题，例如<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">NexT</a></li>
+<li>下载<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cd your-hexo-site</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span></pre></td></tr></table></figure></li>
+<li>应用，在站定配置文件中修改以下字段<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span></pre></td></tr></table></figure>
+<h2 id="6-2-添加评论系统"><a href="#6-2-添加评论系统" class="headerlink" title="6.2. 添加评论系统"></a>6.2. 添加评论系统</h2></li>
 <li>注册<a href="https://www.leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a>帐号，并根据提示进行实名认证和邮箱认证。</li>
 <li>在LeanCloud控制台创建新应用，并获取应用对应的appid 和 appkey</li>
 <li>在Leancloud -&gt; 设置 -&gt; 安全中心 -&gt; Web 安全域名 把Blog的域名加进去</li>
@@ -133,121 +367,377 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/06/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog/" data-id="ck3twpn9a00010sm6b2lqb5sb" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BB%8F%E9%AA%8C/" rel="tag">经验</a></li></ul>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E7%BB%8F%E9%AA%8C/" rel="tag"># 经验</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+
+      
+      
     </footer>
   </div>
   
-    
-<nav id="article-nav">
   
-    <a href="/2019/12/06/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog-1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
         
-          从0开始搭建自己的Blog
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-介绍"><span class="nav-number">1.</span> <span class="nav-text">1. 介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-购买云服务"><span class="nav-number">2.</span> <span class="nav-text">2. 购买云服务</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-服务器"><span class="nav-number">2.1.</span> <span class="nav-text">2.1. 服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-域名"><span class="nav-number">2.2.</span> <span class="nav-text">2.2. 域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-对象储存服务"><span class="nav-number">2.3.</span> <span class="nav-text">2.3. 对象储存服务</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-配置云服务"><span class="nav-number">3.</span> <span class="nav-text">3. 配置云服务</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置服务器"><span class="nav-number">3.1.</span> <span class="nav-text">配置服务器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-配置开发环境"><span class="nav-number">4.</span> <span class="nav-text">4. 配置开发环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-搭建Hexo框架"><span class="nav-number">5.</span> <span class="nav-text">5. 搭建Hexo框架</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-配置Blog"><span class="nav-number">6.</span> <span class="nav-text">6. 配置Blog</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1-配置到GitHub-Page"><span class="nav-number">6.1.</span> <span class="nav-text">6.1. 配置到GitHub Page</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#换主题"><span class="nav-number">6.2.</span> <span class="nav-text">换主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-2-添加评论系统"><span class="nav-number">6.3.</span> <span class="nav-text">6.2. 添加评论系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-3-配合对象存储服务"><span class="nav-number">6.4.</span> <span class="nav-text">6.3. 配合对象存储服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-4-日常使用"><span class="nav-number">6.5.</span> <span class="nav-text">6.4. 日常使用</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
         
       </div>
-    </a>
-  
-  
-</nav>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
 
   
-</article>
+</div>
 
-</section>
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%8F%E9%AA%8C/" rel="tag">经验</a></li></ul>
-    </div>
-  </div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/%E7%BB%8F%E9%AA%8C/" style="font-size: 10px;">经验</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li></ul>
-    </div>
-  </div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/12/06/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog-1/">从0开始搭建自己的Blog</a>
-          </li>
-        
-          <li>
-            <a href="/2019/12/06/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog/">从0开始搭建自己的Blog</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
-  
-</aside>
+
+
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
+    
 
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'gbkHSNjm8dOYDmsdfWvWwI7X-9Nh9j0Va',
+        appKey: 'VwdVFxz4kBUsnmv6OXzDyyyr',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
