@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="1. 介绍 2. 购买云服务 2.1. 服务器 2.2. 域名 2.3. 对象储存服务   3. 配置云服务 3.1. 配置服务器   4. 配置开发环境 5. 搭建Hexo框架 6. 配置Blog 6.1. 配置到GitHub Page 6.2. 换主题 6.3. 添加评论系统 6.4. 配合对象存储服务 6.5. 日常使用      1. 介绍 写在最前  想到哪做到哪写到哪，本文内容比">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-06T09:01:53.541Z">
+<meta property="og:updated_time" content="2019-12-06T09:24:27.718Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -347,23 +347,31 @@
 </ol>
 <h2 id="2-2-域名"><a href="#2-2-域名" class="headerlink" title="2.2. 域名"></a>2.2. 域名</h2><h2 id="2-3-对象储存服务"><a href="#2-3-对象储存服务" class="headerlink" title="2.3. 对象储存服务"></a>2.3. 对象储存服务</h2><h1 id="3-配置云服务"><a href="#3-配置云服务" class="headerlink" title="3. 配置云服务"></a>3. 配置云服务</h1><h2 id="3-1-配置服务器"><a href="#3-1-配置服务器" class="headerlink" title="3.1. 配置服务器"></a>3.1. 配置服务器</h2><ol>
 <li>安装Git</li>
-<li>安装Nodejs<h1 id="4-配置开发环境"><a href="#4-配置开发环境" class="headerlink" title="4. 配置开发环境"></a>4. 配置开发环境</h1></li>
+<li>安装Nodejs</li>
+</ol>
+<h1 id="4-配置开发环境"><a href="#4-配置开发环境" class="headerlink" title="4. 配置开发环境"></a>4. 配置开发环境</h1><ol>
 <li>下载安装<a href="http://www.hostbuf.com/t/988.html" target="_blank" rel="noopener">FinalShell</a></li>
 <li>本地安装vscode-insiders</li>
 <li>安装Remote Development扩展</li>
 <li>cmd+P输入remote, 使用Remote-ssh: connect to host选项</li>
-<li>按提示输入host地址，登录名，密码<h1 id="5-搭建Hexo框架"><a href="#5-搭建Hexo框架" class="headerlink" title="5. 搭建Hexo框架"></a>5. 搭建Hexo框架</h1><h1 id="6-配置Blog"><a href="#6-配置Blog" class="headerlink" title="6. 配置Blog"></a>6. 配置Blog</h1><h2 id="6-1-配置到GitHub-Page"><a href="#6-1-配置到GitHub-Page" class="headerlink" title="6.1. 配置到GitHub Page"></a>6.1. 配置到GitHub Page</h2><h2 id="6-2-换主题"><a href="#6-2-换主题" class="headerlink" title="6.2. 换主题"></a>6.2. 换主题</h2></li>
+<li>按提示输入host地址，登录名，密码</li>
+</ol>
+<h1 id="5-搭建Hexo框架"><a href="#5-搭建Hexo框架" class="headerlink" title="5. 搭建Hexo框架"></a>5. 搭建Hexo框架</h1><h1 id="6-配置Blog"><a href="#6-配置Blog" class="headerlink" title="6. 配置Blog"></a>6. 配置Blog</h1><h2 id="6-1-配置到GitHub-Page"><a href="#6-1-配置到GitHub-Page" class="headerlink" title="6.1. 配置到GitHub Page"></a>6.1. 配置到GitHub Page</h2><h2 id="6-2-换主题"><a href="#6-2-换主题" class="headerlink" title="6.2. 换主题"></a>6.2. 换主题</h2><ol>
 <li>选择一个支持评论系统的主题，例如<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">NexT</a></li>
 <li>下载<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cd your-hexo-site</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span></pre></td></tr></table></figure></li>
 <li>应用，在站定配置文件中修改以下字段<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span></pre></td></tr></table></figure>
-<h2 id="6-3-添加评论系统"><a href="#6-3-添加评论系统" class="headerlink" title="6.3. 添加评论系统"></a>6.3. 添加评论系统</h2></li>
+
+</li>
+</ol>
+<h2 id="6-3-添加评论系统"><a href="#6-3-添加评论系统" class="headerlink" title="6.3. 添加评论系统"></a>6.3. 添加评论系统</h2><ol>
 <li>注册<a href="https://www.leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a>帐号，并根据提示进行实名认证和邮箱认证。</li>
 <li>在LeanCloud控制台创建新应用，并获取应用对应的appid 和 appkey</li>
 <li>在Leancloud -&gt; 设置 -&gt; 安全中心 -&gt; Web 安全域名 把Blog的域名加进去</li>
 <li>配置Hexo项目的<strong>题配置文件</strong>，添加以下内容<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="attr">valine:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">appid:</span>  <span class="string">your</span> <span class="string">app</span> <span class="string">id</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">appkey:</span> <span class="string">your</span> <span class="string">app</span> <span class="string">key</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">notify:</span> <span class="literal">false</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">verify:</span> <span class="literal">false</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">placeholder:</span> <span class="string">ヾﾉ≧∀≦)o来啊，快活啊!</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">guest_info:</span> <span class="string">nick,mail,link</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span></span></pre></td></tr></table></figure>
-<h2 id="6-4-配合对象存储服务"><a href="#6-4-配合对象存储服务" class="headerlink" title="6.4. 配合对象存储服务"></a>6.4. 配合对象存储服务</h2><h2 id="6-5-日常使用"><a href="#6-5-日常使用" class="headerlink" title="6.5. 日常使用"></a>6.5. 日常使用</h2></li>
-</ol>
 
+</li>
+</ol>
+<h2 id="6-4-配合对象存储服务"><a href="#6-4-配合对象存储服务" class="headerlink" title="6.4. 配合对象存储服务"></a>6.4. 配合对象存储服务</h2><h2 id="6-5-日常使用"><a href="#6-5-日常使用" class="headerlink" title="6.5. 日常使用"></a>6.5. 日常使用</h2>
       
     </div>
     
