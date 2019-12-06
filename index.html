@@ -86,85 +86,49 @@
         <!-- TOC -->
 
 <ul>
-<li><a href="#1-购买服务器">1. 购买服务器</a></li>
-<li><a href="#2-工具">2. 工具</a></li>
-<li><a href="#3-步骤">3. 步骤</a></li>
+<li><a href="#1-介绍">1. 介绍</a></li>
+<li><a href="#2-购买云服务">2. 购买云服务</a><ul>
+<li><a href="#服务器">服务器</a></li>
+<li><a href="#域名">域名</a></li>
+</ul>
+</li>
+<li><a href="#3-配置云服务">3. 配置云服务</a></li>
+<li><a href="#4-配置开发环境">4. 配置开发环境</a></li>
+<li><a href="#5-搭建hexo框架">5. 搭建Hexo框架</a></li>
+<li><a href="#6-配置blog">6. 配置Blog</a><ul>
+<li><a href="#61-配置到github-page">6.1. 配置到GitHub Page</a></li>
+<li><a href="#62-日常使用">6.2. 日常使用</a></li>
+</ul>
+</li>
 </ul>
 <!-- /TOC -->
 
-<h1 id="1-购买服务器"><a href="#1-购买服务器" class="headerlink" title="1. 购买服务器"></a>1. 购买服务器</h1><h1 id="2-工具"><a href="#2-工具" class="headerlink" title="2. 工具"></a>2. 工具</h1><ul>
-<li><a href="http://www.hostbuf.com/t/988.html" target="_blank" rel="noopener">FinalShell</a></li>
+<h1 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1. 介绍"></a>1. 介绍</h1><ul>
+<li>写在最前<br>  想到哪做到哪写到哪，本文内容比较随性，部分步骤不一定需要，自行斟酌，如有任何疑问，评论区留。言。</li>
+<li>环境<ul>
+<li>MacOS 10.15<h1 id="2-购买云服务"><a href="#2-购买云服务" class="headerlink" title="2. 购买云服务"></a>2. 购买云服务</h1><h2 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h2></li>
 </ul>
-<h1 id="3-步骤"><a href="#3-步骤" class="headerlink" title="3. 步骤"></a>3. 步骤</h1><ol>
-<li><p>本地安装vscode-insiders</p>
 </li>
-<li><p>安装Remote Development扩展</p>
-</li>
-<li><p>cmd+P输入remote, 使用Remote-ssh: connect to host选项</p>
-</li>
-<li><p>按提示输入host地址，登录名，密码</p>
-</li>
-<li><p>远端安装vscode-insiders</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">rpm --import https://packages.microsoft.com/keys/microsoft.asc</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" &gt; /etc/yum.repos.d/vscode.repo'</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">yum check-update</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">sudo yum install code-insiders</span></pre></td></tr></table></figure></li>
+</ul>
+<ol>
+<li>我随便选了<a href="https://www.aliyun.com/product/ecs?spm=5176.12825654.eofdhaal5.2.6f6e2c4aY2spOX&aly_as=zBRFYGGw" target="_blank" rel="noopener">阿里云的ECDS</a>。上面还有一堆产品，有耐心慢慢研究，没耐心继续看我的文章。</li>
+</ol>
+<h2 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h2><h1 id="3-配置云服务"><a href="#3-配置云服务" class="headerlink" title="3. 配置云服务"></a>3. 配置云服务</h1><h1 id="4-配置开发环境"><a href="#4-配置开发环境" class="headerlink" title="4. 配置开发环境"></a>4. 配置开发环境</h1><ol>
+<li>下载安装<a href="http://www.hostbuf.com/t/988.html" target="_blank" rel="noopener">FinalShell</a></li>
+<li>本地安装vscode-insiders</li>
+<li>安装Remote Development扩展</li>
+<li>cmd+P输入remote, 使用Remote-ssh: connect to host选项</li>
+<li>按提示输入host地址，登录名，密码<h1 id="5-搭建Hexo框架"><a href="#5-搭建Hexo框架" class="headerlink" title="5. 搭建Hexo框架"></a>5. 搭建Hexo框架</h1><h1 id="6-配置Blog"><a href="#6-配置Blog" class="headerlink" title="6. 配置Blog"></a>6. 配置Blog</h1><h2 id="6-1-配置到GitHub-Page"><a href="#6-1-配置到GitHub-Page" class="headerlink" title="6.1. 配置到GitHub Page"></a>6.1. 配置到GitHub Page</h2><h2 id="6-2-日常使用"><a href="#6-2-日常使用" class="headerlink" title="6.2. 日常使用"></a>6.2. 日常使用</h2></li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/06/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog/" data-id="ck3t3qad10001q8m64dh87svv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/12/06/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog/" data-id="ck3tve3s60000uhm6hh4s5n7q" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BB%8F%E9%AA%8C/" rel="tag">经验</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/12/06/hello-world/" class="article-date">
-  <time datetime="2019-12-05T18:38:33.093Z" itemprop="datePublished">2019-12-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/06/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/12/06/hello-world/" data-id="ck3t3qack0000q8m66yl24u59" class="article-share-link">Share</a>
-      
-      
     </footer>
   </div>
   
@@ -218,10 +182,6 @@
         
           <li>
             <a href="/2019/12/06/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog/">从0开始搭建自己的Blog</a>
-          </li>
-        
-          <li>
-            <a href="/2019/12/06/hello-world/">Hello World</a>
           </li>
         
       </ul>
