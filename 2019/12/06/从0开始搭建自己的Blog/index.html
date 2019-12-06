@@ -148,14 +148,7 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta custom-logo">
-    
-      <div class="site-meta-headline">
-        <a>
-          <img class="custom-logo-image" src="http://lc-gbkHSNjm.cn-e1.lcfile.com/da27e7f1b3f9792bdecf/WechatIMG135.jpeg"
-               alt="JomarWu's Blog"/>
-        </a>
-      </div>
+  <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
@@ -196,12 +189,22 @@
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            Archives
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
           </a>
         </li>
       
@@ -273,7 +276,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2019-12-06T17:24:27+08:00">
+                2019-12-06
+              </time>
             
           </span>
 
@@ -386,7 +401,44 @@
     
 
     
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://lc-gbkHSNjm.cn-e1.lcfile.com/4dd5ba964fb6a5d8fc56/WechatCode.jpeg" alt="JomarWu wechat" style="width: 200px; max-width: 100%;"/>
+    <div>Subscribe to my blog by scanning my public wechat account</div>
+</div>
 
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>我支持技术变现</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://lc-gbkHSNjm.cn-e1.lcfile.com/24f0e9bf652c4b448dea/wechatpay.png" alt="JomarWu WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="http://lc-gbkHSNjm.cn-e1.lcfile.com/d71a0829d2b514695c10/aliplay.jpeg" alt="JomarWu Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
@@ -478,7 +530,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <a href="/archives">
               
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">posts</span>
