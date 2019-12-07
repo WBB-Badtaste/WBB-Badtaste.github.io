@@ -147,7 +147,14 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta custom-logo">
+    
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="http://lc-gbkHSNjm.cn-e1.lcfile.com/5475dc59814d29a30c03/JomarWuLogo.png"
+               alt="JomarWu's Blog"/>
+        </a>
+      </div>
     
 
     <div class="custom-logo-site-title">
@@ -240,6 +247,153 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/07/%E7%AC%AC%E4%B8%80%E4%B8%AAVSCode%E6%8F%92%E4%BB%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="JomarWu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JomarWu's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/07/%E7%AC%AC%E4%B8%80%E4%B8%AAVSCode%E6%8F%92%E4%BB%B6/" itemprop="url">第一个VSCode插件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-07T18:30:06+08:00">
+                2019-12-07
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2019-12-07T20:48:14+08:00">
+                2019-12-07
+              </time>
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/12/07/%E7%AC%AC%E4%B8%80%E4%B8%AAVSCode%E6%8F%92%E4%BB%B6/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/12/07/%E7%AC%AC%E4%B8%80%E4%B8%AAVSCode%E6%8F%92%E4%BB%B6/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>在使用VScode的开发过程中，终会遇到一些简单的开发辅助功能又找不到合适插件的情况。例如：我在编写Markdown的过程中大量需要粘贴截图到文章，并且文章需要多端渲染。因此准备做一个自动上传剪切板数据到OOS并生成URL的插件。</p>
+<h1 id="使用模板"><a href="#使用模板" class="headerlink" title="使用模板"></a>使用模板</h1><!-- 1. 下载[微软官方脚手架](https://github.com/Microsoft/vscode-generator-code) -->
+<ol>
+<li>切换到脚手架项目路径，执行<code>npm install -g yo generator-code</code></li>
+<li><code>yo code</code>初始化项目，<em>这里可能会因网络问题延迟几十秒</em></li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/06/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84Blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -287,8 +441,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-12-06T17:24:27+08:00">
-                2019-12-06
+              <time title="Post modified" itemprop="dateModified" datetime="2019-12-07T20:48:15+08:00">
+                2019-12-07
               </time>
             
           </span>
@@ -353,21 +507,22 @@
 <li><a href="#61-配置到github-page">6.1. 配置到GitHub Page</a></li>
 <li><a href="#62-换主题">6.2. 换主题</a></li>
 <li><a href="#63-添加评论系统">6.3. 添加评论系统</a></li>
-<li><a href="#64-配合对象存储服务">6.4. 配合对象存储服务</a></li>
-<li><a href="#65-日常使用">6.5. 日常使用</a></li>
+<li><a href="#64-配置开机启动">6.4. 配置开机启动</a></li>
+<li><a href="#65-配合对象存储服务">6.5. 配合对象存储服务</a></li>
 </ul>
 </li>
+<li><a href="#7-日常使用">7. 日常使用</a></li>
 </ul>
 <!-- /TOC -->
 
 <h1 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1. 介绍"></a>1. 介绍</h1><ul>
 <li>写在最前<br>  想到哪做到哪写到哪，本文内容比较随性，部分步骤不一定需要，自行斟酌，如有任何疑问，评论区留。言。</li>
 <li>环境<ul>
-<li>MacOS 10.15<h1 id="2-购买云服务"><a href="#2-购买云服务" class="headerlink" title="2. 购买云服务"></a>2. 购买云服务</h1><h2 id="2-1-服务器"><a href="#2-1-服务器" class="headerlink" title="2.1. 服务器"></a>2.1. 服务器</h2></li>
+<li>MacOS 10.15</li>
 </ul>
 </li>
 </ul>
-<ol>
+<h1 id="2-购买云服务"><a href="#2-购买云服务" class="headerlink" title="2. 购买云服务"></a>2. 购买云服务</h1><h2 id="2-1-服务器"><a href="#2-1-服务器" class="headerlink" title="2.1. 服务器"></a>2.1. 服务器</h2><ol>
 <li>我随便选了<a href="https://www.aliyun.com/product/ecs?spm=5176.12825654.eofdhaal5.2.6f6e2c4aY2spOX&aly_as=zBRFYGGw" target="_blank" rel="noopener">阿里云的ECS</a>。</li>
 </ol>
 <h2 id="2-2-域名"><a href="#2-2-域名" class="headerlink" title="2.2. 域名"></a>2.2. 域名</h2><h2 id="2-3-对象储存服务"><a href="#2-3-对象储存服务" class="headerlink" title="2.3. 对象储存服务"></a>2.3. 对象储存服务</h2><h1 id="3-配置云服务"><a href="#3-配置云服务" class="headerlink" title="3. 配置云服务"></a>3. 配置云服务</h1><h2 id="3-1-配置服务器"><a href="#3-1-配置服务器" class="headerlink" title="3.1. 配置服务器"></a>3.1. 配置服务器</h2><ol>
@@ -393,10 +548,12 @@
 <li>在LeanCloud控制台创建新应用，并获取应用对应的appid 和 appkey</li>
 <li>在Leancloud -&gt; 设置 -&gt; 安全中心 -&gt; Web 安全域名 把Blog的域名加进去</li>
 <li>配置Hexo项目的<strong>题配置文件</strong>，添加以下内容<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="attr">valine:</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">appid:</span>  <span class="string">your</span> <span class="string">app</span> <span class="string">id</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">appkey:</span> <span class="string">your</span> <span class="string">app</span> <span class="string">key</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">notify:</span> <span class="literal">false</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">verify:</span> <span class="literal">false</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">placeholder:</span> <span class="string">ヾﾉ≧∀≦)o来啊，快活啊!</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">guest_info:</span> <span class="string">nick,mail,link</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span></span></pre></td></tr></table></figure>
-
-</li>
+<h2 id="6-4-配置开机启动"><a href="#6-4-配置开机启动" class="headerlink" title="6.4. 配置开机启动"></a>6.4. 配置开机启动</h2><h2 id="6-5-配合对象存储服务"><a href="#6-5-配合对象存储服务" class="headerlink" title="6.5. 配合对象存储服务"></a>6.5. 配合对象存储服务</h2><h1 id="7-日常使用"><a href="#7-日常使用" class="headerlink" title="7. 日常使用"></a>7. 日常使用</h1></li>
 </ol>
-<h2 id="6-4-配合对象存储服务"><a href="#6-4-配合对象存储服务" class="headerlink" title="6.4. 配合对象存储服务"></a>6.4. 配合对象存储服务</h2><h2 id="6-5-日常使用"><a href="#6-5-日常使用" class="headerlink" title="6.5. 日常使用"></a>6.5. 日常使用</h2>
+<h2 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h2><ol>
+<li>创建新的文件<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">cd your-blog-path</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">hexo new "tittle"</span></pre></td></tr></table></figure></li>
+</ol>
+
           
         
       
@@ -477,7 +634,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
